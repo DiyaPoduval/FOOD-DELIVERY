@@ -1,0 +1,149 @@
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <View
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="#F25D2F"
+                android:layout_margin="10dp"/>
+
+            <TextView
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:text="Food Delivery"
+                android:textSize="30dp"
+                android:textColor="#F25D2F"
+                android:textStyle="bold"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="search for dishes or restuarants"
+                android:textColor="#707B85"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Featured Dishes"
+                android:textSize="20dp"/>
+            <HorizontalScrollView android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_margin="10dp"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:background="@drawable/dosa"/>
+                    <ImageView
+                        android:layout_margin="10dp"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:background="@drawable/noodles"/>
+                    <ImageView
+                        android:layout_margin="10dp"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:background="@drawable/burger"/>
+                    <ImageView
+                        android:layout_margin="10dp"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:background="@drawable/pizza"/>
+                    <ImageView
+                        android:layout_margin="10dp"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:background="@drawable/alfham"/>
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="393dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textStyle="bold"
+                android:text="pizza"
+                android:backgroundTint="#F24006"/>
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textStyle="bold"
+                android:textColor="#EEF1F4"
+                android:text="Burgers"
+                android:backgroundTint="#F24006"/>
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textStyle="bold"
+                android:textColor="#EEF1F4"
+                android:text="Salads"
+                android:backgroundTint="#F24006"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Popular Dishes"
+                android:textSize="20dp"/>
+            <ImageView
+                android:layout_margin="10dp"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:background="@drawable/burger"
+                android:layout_gravity="center"/>
+            <ImageView
+                android:layout_margin="10dp"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:background="@drawable/noodles"
+                android:layout_gravity="center"/>
+            <ImageView
+                android:layout_margin="10dp"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:background="@drawable/pizza"
+                android:layout_gravity="center"/>
+            <ImageView
+                android:layout_margin="10dp"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:background="@drawable/dosa"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
